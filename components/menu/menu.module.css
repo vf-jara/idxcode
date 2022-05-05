@@ -1,10 +1,30 @@
 .menuContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 13px 12px;
     border: 1px solid red;
+    height: 50px;
+}
+
+.menuContainer ul {
+    padding: 0;
 }
 
 .menuContainer ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 30px;
-    ;
+    color: #03030380;
+    transition: all .2s ease-out;
+    font-size: 16px;
+
+}
+
+.menuContainer ul li:hover {
+    color: #030303;
+}
+
+.active {
+    color: #030303;
+
 }
