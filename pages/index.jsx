@@ -9,7 +9,7 @@ import Navbar from "../components/Navbar/Navbar";
 export default function Home() {
   return (
     <>
-      <div className="container mx-auto px-5 pt-12">
+      <div className="container mx-auto px-5">
         <Navbar />
 
       </div>
