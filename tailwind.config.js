@@ -8,6 +8,8 @@ module.exports = {
       colors: {
         'idx-black': '#03030380',
         'idx-bg-black': '#121313',
+        'idx-green': '#00ff00',
+        'idx-cinza': '#00FF000D',
       },
       backgroundImage: {
         'split-white-black': 'linear-gradient(to bottom, white 50%, #121313 50%)'

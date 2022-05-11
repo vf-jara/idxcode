@@ -1,9 +1,8 @@
+import Navbar from "../components/navbar/Navbar";
+import Hero from "../components/hero/Hero";
+import Services from "../components/serviceSection/Services";
 
-import BotaoOrcamento from "../components/botaoOrcamento/BotaoOrcamento";
-import Hero from "../components/Hero/Hero";
-import Logo from "../components/logo/Logo";
-import Menu from "../components/menu/Menu";
-import Navbar from "../components/Navbar/Navbar";
+
 
 
 export default function Home() {
@@ -13,9 +12,12 @@ export default function Home() {
         <Navbar />
 
       </div>
-      <div>
+      <section>
         <Hero />
-      </div>
+      </section>
+      <section>
+        <Services />
+      </section>
     </>
   )
 }
