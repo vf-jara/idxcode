@@ -6,6 +6,7 @@ export default function Slide(props) {
             <div className={styles.slide}>
                 <Image
                     src={props.src}
+                    alt="slide"
                     layout="fixed"
                     height={450}
                     width={450}

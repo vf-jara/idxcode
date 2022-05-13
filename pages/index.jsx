@@ -12,7 +12,6 @@ export default function Home() {
     <>
       <div className="container mx-auto px-5">
         <Navbar />
-
       </div>
       <section>
         <Hero />

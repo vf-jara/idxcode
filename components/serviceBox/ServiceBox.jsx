@@ -10,6 +10,7 @@ export default function ServiceBox(props) {
                     <div className="h-[80px] w-[80px] flex items-center justify-center bg-idx-cinza hover:bg-idx-green transition-all ease-in-out duration-300 p-4 rounded-full">
                         <Image
                             src={props.icon}
+                            alt="ícone"
                         />
                     </div>
                 </div>
