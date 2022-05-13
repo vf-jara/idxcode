@@ -1,0 +1,14 @@
+.slide {
+    display: flex !important;
+    width: 450px;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 450px;
+}
+
+.slide>span>img {
+    display: flex !important;
+    object-fit: cover !important;
+    align-items: center !important;
+    justify-content: center !important;
+}

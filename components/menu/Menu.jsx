@@ -11,7 +11,7 @@ export default function Menu() {
                     <li className="hover:text-black transition-all ease-in-out delay-25"><Link href="/"><a>O que Fazemos</a></Link></li>
                     <li className="hover:text-black transition-all ease-in-out delay-25"><Link href="/"><a>Quem Somos</a></Link></li>
                 </ul>
-                <BotaoOrcamento texto="Solicite um Orçamento" />
+                <BotaoOrcamento texto="Solicite um Orçamento" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"/>
             </div>
 
         </>
