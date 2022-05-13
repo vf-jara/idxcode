@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import imagem from '../../public/assets/images/computador.png';
+import imagem from '/public/assets/images/computador.png';
 import BotaoOrcamento from '../botaoOrcamento/BotaoOrcamento';
 export default function Hero() {
     return (

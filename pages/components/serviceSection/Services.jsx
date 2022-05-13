@@ -1,7 +1,7 @@
 import ServiceBox from '../serviceBox/ServiceBox';
-import icon1 from '../../public/assets/images/icon1.png';
-import icon2 from '../../public/assets/images/icon2.png';
-import icon3 from '../../public/assets/images/icon3.png';
+import icon1 from '/public/assets/images/icon1.png';
+import icon2 from '/public/assets/images/icon2.png';
+import icon3 from '/public/assets/images/icon3.png';
 import BotaoOrcamento from '../botaoOrcamento/BotaoOrcamento';
 
 export default function Services() {

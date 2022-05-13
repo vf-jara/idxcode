@@ -1,4 +1,3 @@
-import placeholder from '../../public/assets/images/ph.png'
 import SliderHome from '../slider/Slider'
 import BotaoOrcamento from '../botaoOrcamento/BotaoOrcamento'
 

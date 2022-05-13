@@ -1,6 +1,6 @@
 import Slider from "react-slick";
 import Slide from './Slide';
-import imagem from '../../public/assets/images/ph.png'
+import imagem from '/public/assets/images/ph.png'
 export default function SliderHome() {
     var settings = {
         dots: false,

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './logo.module.css'
-import logo from '../../public/assets/images/logoBlack.png'
+import logo from '/public/assets/images/logoBlack.png'
 
 
 export default function Logo() {
