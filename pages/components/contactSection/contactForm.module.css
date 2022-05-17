@@ -1,0 +1,25 @@
+.mainForm>::placeholder {
+    color: #9B9B9B;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.mainForm>textarea {
+    overflow: auto;
+    resize: none;
+}
+
+.mainForm input[type=radio] {
+    border-radius: 0;
+    border: 2px solid #EAEAEA;
+    padding: 0.5em;
+    -webkit-appearance: none;
+}
+.mainForm input[type=radio]:checked{
+    --tw-ring-color: rgb(132 189 58 / var(--tw-ring-opacity)) !important;
+    background-color: #84BD3A !important;
+    background-image: none !important;
+}
+.mainForm input[type=radio]:focus{
+    --tw-ring-color: rgb(132 189 58 / var(--tw-ring-opacity)) !important;
+}
