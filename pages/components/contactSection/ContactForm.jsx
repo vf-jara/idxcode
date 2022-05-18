@@ -1,5 +1,4 @@
 import styles from './contactForm.module.css'
-
 export default function ContactForm() {
     return (
         <>
@@ -11,7 +10,7 @@ export default function ContactForm() {
                     Preencha corretamente os campos abaixo
                 </p>
             </div>
-            <div className=" w-full px-20 pb-20 pt-10 mx-auto">
+            <div className=" w-full px-20 pb-11 pt-10 mx-auto">
                 <form className={styles.mainForm} action="">
                     <label htmlFor="nome" className="font-semibold text-lg">Qual seu nome?</label>
                     <input type='text' name="nome" className="
@@ -99,8 +98,8 @@ export default function ContactForm() {
                             <input type="radio" name="formaDeContato" className="mr-1.5 ring-[#00ff00]" value="Ligação Telefônica" />
                             <label htmlFor="formaDeContato" className="text">Ligação Telefônica</label>
                         </span>
-
                     </div>
+                    <button type="submit" className={styles.button}>Solicitar Orçamento</button>
                 </form>
             </div>
 

@@ -13,13 +13,39 @@
     border-radius: 0;
     border: 2px solid #EAEAEA;
     padding: 0.5em;
+    transition: all 0.275s;
     -webkit-appearance: none;
 }
-.mainForm input[type=radio]:checked{
+
+.mainForm input[type=radio]:checked {
     --tw-ring-color: rgb(132 189 58 / var(--tw-ring-opacity)) !important;
     background-color: #84BD3A !important;
     background-image: none !important;
 }
-.mainForm input[type=radio]:focus{
+
+.mainForm input[type=radio]:focus {
     --tw-ring-color: rgb(132 189 58 / var(--tw-ring-opacity)) !important;
 }
+.button {
+    width:100%;
+    margin-top: 28px;
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 49px;
+    box-sizing: border-box;
+    padding: 13px 12px;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to right, #000 50%, #00ff00 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position .2s ease-out, color .2s ease-out;
+}
+
+.button:hover {
+    background-position: left bottom;
+    color: #fff;
+
+}
+
