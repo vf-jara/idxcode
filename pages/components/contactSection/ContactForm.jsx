@@ -10,7 +10,7 @@ export default function ContactForm() {
                     Preencha corretamente os campos abaixo
                 </p>
             </div>
-            <div className=" w-full px-3 lg:px-20 pb-11 pt-10 mx-auto">
+            <div className=" w-full px-4 lg:px-20 pb-11 pt-10 mx-auto">
                 <form className={styles.mainForm} action="">
                     <label htmlFor="nome" className="font-semibold text-lg">Qual seu nome?</label>
                     <input type='text' name="nome" className="
@@ -18,7 +18,7 @@ export default function ContactForm() {
                     w-full 
                     py-3
                     mt-1.5
-                    mb-8 
+                    mb-6 
                     block 
                     rounded-sm 
                     border-2
@@ -35,7 +35,7 @@ export default function ContactForm() {
                     w-full 
                     py-3
                     mt-1.5 
-                    mb-8
+                    mb-6
                     block 
                     rounded-sm 
                     border-2
@@ -51,7 +51,7 @@ export default function ContactForm() {
                     form-input 
                     py-3
                     mt-1.5
-                    mb-8 
+                    mb-6 
                     w-full 
                     block 
                     rounded-sm 
@@ -67,7 +67,7 @@ export default function ContactForm() {
                     <textarea name="description" rows="3" className="
                     form-textarea 
                     mt-1.5
-                    mb-8
+                    mb-6
                     py-3
                     w-full 
                     block 
@@ -81,23 +81,29 @@ export default function ContactForm() {
                         placeholder="Informe sobre o seu projeto e como imagina que podemos ajuda-lo" />
 
                     <p className="font-semibold text-lg">Como prefere que nossa equipe comercial fale com você?</p>
-                    <div className="flex justify-between">
-                        <span>
-                            <input type="radio" name="formaDeContato" className="mr-1.5 ring-[#00ff00]" value="Todos" />
-                            <label htmlFor="formaDeContato" className="text">Todos</label>
-                        </span>
-                        <span>
-                            <input type="radio" name="formaDeContato" className="mr-1.5 ring-[#00ff00]" value="Email" />
-                            <label htmlFor="formaDeContato" className="text">E-mail</label>
-                        </span>
-                        <span>
-                            <input type="radio" name="formaDeContato" className="mr-1.5 ring-[#00ff00]" value="WhatsApp" />
-                            <label htmlFor="formaDeContato" className="text">WhatsApp</label>
-                        </span>
-                        <span>
-                            <input type="radio" name="formaDeContato" className="mr-1.5 ring-[#00ff00]" value="Ligação Telefônica" />
-                            <label htmlFor="formaDeContato" className="text">Ligação Telefônica</label>
-                        </span>
+                    <div className="lg:flex justify-between">
+                        <div className="mx-auto space-x-3">
+                            <span>
+                                <input type="radio" name="formaDeContato" className="mr-1.5 ring-[#00ff00]" value="Todos" />
+                                <label htmlFor="formaDeContato" className="text">Todos</label>
+                            </span>
+                            <span>
+                                <input type="radio" name="formaDeContato" className="mr-1.5 ring-[#00ff00]" value="Email" />
+                                <label htmlFor="formaDeContato" className="text">E-mail</label>
+                            </span>
+
+                        </div>
+                        <div className="mx-auto space-x-3">
+                            <span>
+                                <input type="radio" name="formaDeContato" className="mr-1.5 ring-[#00ff00]" value="WhatsApp" />
+                                <label htmlFor="formaDeContato" className="text">WhatsApp</label>
+                            </span>
+                            <span>
+                                <input type="radio" name="formaDeContato" className="mr-1.5 ring-[#00ff00]" value="Ligação Telefônica" />
+                                <label htmlFor="formaDeContato" className="text">Ligação Telefônica</label>
+                            </span>
+
+                        </div>
                     </div>
                     <button type="submit" className={styles.button}>Solicitar Orçamento</button>
                 </form>

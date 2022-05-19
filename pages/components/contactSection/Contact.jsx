@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 export default function Contact() {
     return (
         <>
-            <div className="w-full mt-10 lg:mt-24 mb-24">
+            <div className="w-full mt-10 lg:mt-24 lg:mb-24">
                 <div className="container lg:flex mx-auto">
                     <div className="w-full lg:w-5/12">
                         <div className="title pt-10 mb-14">
