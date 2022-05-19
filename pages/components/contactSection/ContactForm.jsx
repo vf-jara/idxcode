@@ -87,6 +87,8 @@ export default function ContactForm() {
                                 <input type="radio" name="formaDeContato" className="mr-1.5 ring-[#00ff00]" value="Todos" />
                                 <label htmlFor="formaDeContato" className="text">Todos</label>
                             </span>
+                        </div>
+                        <div className="mx-auto space-x-3">
                             <span>
                                 <input type="radio" name="formaDeContato" className="mr-1.5 ring-[#00ff00]" value="Email" />
                                 <label htmlFor="formaDeContato" className="text">E-mail</label>
@@ -98,11 +100,13 @@ export default function ContactForm() {
                                 <input type="radio" name="formaDeContato" className="mr-1.5 ring-[#00ff00]" value="WhatsApp" />
                                 <label htmlFor="formaDeContato" className="text">WhatsApp</label>
                             </span>
+
+                        </div>
+                        <div className="mx-auto space-x-3">
                             <span>
                                 <input type="radio" name="formaDeContato" className="mr-1.5 ring-[#00ff00]" value="Ligação Telefônica" />
                                 <label htmlFor="formaDeContato" className="text">Ligação Telefônica</label>
                             </span>
-
                         </div>
                     </div>
                     <button type="submit" className={styles.button}>Solicitar Orçamento</button>

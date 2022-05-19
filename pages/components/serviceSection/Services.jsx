@@ -8,7 +8,7 @@ import BotaoOrcamento from '../botaoOrcamento/BotaoOrcamento';
 export default function Services() {
     return (
         <>
-            <div className=" lg:my-16">
+            <div className="lg:my-16">
                 <div className="container mx-auto md:flex pt-20">
                     <div className="sm:w-full lg:w-5/12">
                         <div className="title">
@@ -21,27 +21,27 @@ export default function Services() {
                         </div>
                         <div className="lg:flex w-full lg:gap-x-3 mb-6 lg:mb-12">
                             <div className="lg:flex-col w-full lg:w-6/12">
-                                <div className="flex">
-                                    <BsFillCheckCircleFill className="text-green-500 mr-1 text-3xl" />
-                                    <p className="text2">Sites Modernos e Mobile First</p>
+                                <div className="flex mb-5">
+                                    <BsFillCheckCircleFill className="text-[#00ff00] mr-1 text-[25px]" />
+                                    <p  className="text-lg font-medium">Sites Modernos e Mobile First</p>
                                 </div>
-                                <div className="flex">
-                                    <BsFillCheckCircleFill className="text-green-500 mr-1 text-3xl" />
-                                    <p className="text2">Gestão de Tráfego</p>
+                                <div className="flex mb-5">
+                                    <BsFillCheckCircleFill className="text-[#00ff00] mr-1 text-[25px]" />
+                                    <p  className="text-lg font-medium">Gestão de Tráfego</p>
                                 </div>
                             </div>
                             <div className="lg:flex-col w-full lg:w-6/12">
-                                <div className="flex">
-                                    <BsFillCheckCircleFill className="text-green-500 mr-1 text-3xl" />
-                                    <p className="text2">Integrações entre sistemas</p>
+                                <div className="flex mb-5">
+                                    <BsFillCheckCircleFill className="text-[#00ff00] mr-1 text-[25px]" />
+                                    <p className="text-lg font-medium">Integrações entre sistemas</p>
                                 </div>
-                                <div className="flex">
-                                    <BsFillCheckCircleFill className="text-green-500 mr-1 text-3xl" />
-                                    <p className="text2">Chatbots e Automações</p>
+                                <div className="flex mb-5">
+                                    <BsFillCheckCircleFill className="text-[#00ff00] mr-1 text-[25px] justify-center align-middle my-auto" />
+                                    <p className="text-lg font-medium">Chatbots e Automações</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="flex justify-center lg:block">
+                        <div className="justify-center lg:block">
                             <BotaoOrcamento texto="Solicite um Orçamento" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
 
                         </div>
