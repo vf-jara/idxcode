@@ -3,14 +3,14 @@ export default function ContactForm() {
     return (
         <>
             <div className="text-center">
-                <h2 className="formTitle">
+                <h2 className={styles.formTitle}>
                     Solicite um Orçamento
                 </h2>
                 <p className="text">
                     Preencha corretamente os campos abaixo
                 </p>
             </div>
-            <div className=" w-full px-20 pb-11 pt-10 mx-auto">
+            <div className=" w-full px-3 lg:px-20 pb-11 pt-10 mx-auto">
                 <form className={styles.mainForm} action="">
                     <label htmlFor="nome" className="font-semibold text-lg">Qual seu nome?</label>
                     <input type='text' name="nome" className="

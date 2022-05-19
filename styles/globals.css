@@ -32,6 +32,7 @@ a {
   line-height: 52px;
   font-weight: 600;
 }
+
 .titleHero {
   font-size: 54px;
   line-height: 75px;
@@ -52,14 +53,38 @@ a {
   font-weight: 500;
   margin-bottom: 32px;
 }
+
 .textWhite {
   font-size: 18px;
   line-height: 32px;
   color: rgb(255, 255, 255, 0.5);
 }
-.formTitle{
-  font-size: 2rem;
-  line-height:3.6rem;
-  color: #121313;
-  font-weight:600;
+
+
+
+@media (max-width: 768px) {
+  .titleHero {
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .text2 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .textWhite {
+    font-size: 16px;
+    line-height: 30px;
+  }
 }

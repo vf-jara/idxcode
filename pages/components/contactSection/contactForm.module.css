@@ -1,3 +1,17 @@
+.formTitle {
+    font-size: 2rem;
+    line-height: 3.6rem;
+    color: #121313;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .formTitle {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
 .mainForm>::placeholder {
     color: #9B9B9B;
     font-size: 14px;
@@ -26,8 +40,9 @@
 .mainForm input[type=radio]:focus {
     --tw-ring-color: rgb(132 189 58 / var(--tw-ring-opacity)) !important;
 }
+
 .button {
-    width:100%;
+    width: 100%;
     margin-top: 28px;
     font-family: inherit;
     font-size: 22px;
@@ -48,4 +63,3 @@
     color: #fff;
 
 }
-

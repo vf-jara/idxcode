@@ -5,7 +5,7 @@ export default function ServiceBox(props) {
 
     return (
         <>
-            <div className="flex w-[515px] h-[150px] bg-white hover:bg-idx-green transition-all ease-in-out duration-300">
+            <div className="flex pr-3 lg:w-[500px] lg:h-[150px] bg-white hover:bg-idx-green transition-all ease-in-out duration-300">
                 <div className="flex-col m-0 p-0 flex w-3/12 items-center justify-center">
                     <div className="h-[80px] w-[80px] flex items-center justify-center bg-idx-cinza hover:bg-idx-green transition-all ease-in-out duration-300 p-4 rounded-full">
                         <Image
