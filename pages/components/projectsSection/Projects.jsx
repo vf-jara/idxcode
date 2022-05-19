@@ -4,7 +4,7 @@ import BotaoOrcamento from '../botaoOrcamento/BotaoOrcamento'
 export default function Projects() {
     return (
         <>
-            <div className="w-full lg:flex lg:flex-row-reverse my-20 lg:my-36">
+            <div className="w-full lg:flex lg:flex-row-reverse my-12 lg:my-36">
 
                 <div className="lg:w-1/2 mx-[24px] lg:pl-24 pr-5 py-10">
                     <div>
