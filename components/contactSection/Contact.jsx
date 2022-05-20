@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 export default function Contact() {
     return (
         <>
-            <div id="contact" className="w-full pt-10 lg:pt-24 lg:mb-24 bg-green2">
+            <div id="contact" className="w-full pt-10 lg:pt-24 lg:pb-24">
                 <div className="container lg:flex mx-auto">
                     <div className="w-full lg:w-5/12">
                         <div className="title pt-10 mb-14">
@@ -17,7 +17,7 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="lg:w-7/12 py-8 lg:py-0 px-3">
-                        <div className="w-full bg-white form-container pt-12 shadow-[0px_5px_83px_#2828281C] rounded">
+                        <div className="w-full form-container pt-12 shadow-[0px_5px_83px_#2828281C] rounded">
                             <ContactForm/>
                         </div>
                     </div>
