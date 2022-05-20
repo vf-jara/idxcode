@@ -8,7 +8,7 @@ import BotaoOrcamento from '../botaoOrcamento/BotaoOrcamento';
 export default function Services() {
     return (
         <>
-            <div className="lg:my-16">
+            <div className="lg:my-16" id="services">
                 <div className="container mx-auto md:flex pt-20">
                     <div className="sm:w-full lg:w-5/12">
                         <div className="title">
@@ -42,7 +42,7 @@ export default function Services() {
                             </div>
                         </div>
                         <div className="justify-center lg:block">
-                            <BotaoOrcamento texto="Solicite um Orçamento" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+                            <BotaoOrcamento texto="Solicite um Orçamento" />
 
                         </div>
                     </div>

@@ -4,7 +4,7 @@ import BotaoOrcamento from '../botaoOrcamento/BotaoOrcamento'
 export default function Projects() {
     return (
         <>
-            <div className="w-full lg:flex lg:flex-row-reverse my-12 lg:my-36">
+            <div id="projects" className="w-full lg:flex lg:flex-row-reverse my-12 lg:my-36">
 
                 <div className="lg:w-1/2 mx-[24px] lg:pl-24 pr-5 py-10">
                     <div>
@@ -14,7 +14,7 @@ export default function Projects() {
                         <p className="text">Dos mais simples websites às mais complexas<br /> integrações com Inteligência Artificial.</p>
                     </div>
                     <div>
-                        <BotaoOrcamento texto="Solicite um Orçamento" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+                        <BotaoOrcamento texto="Solicite um Orçamento"/>
                     </div>
                 </div>
                 <div className="lg:w-1/2">
@@ -31,7 +31,7 @@ export default function Projects() {
                             <p className="textWhite">Todo o potencial da tecnologia atrelada ao seu negócio para fazer você vender mais.</p>
                         </div>
                         <div>
-                            <BotaoOrcamento texto="Solicite um Orçamento" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+                            <BotaoOrcamento texto="Solicite um Orçamento"/>
                         </div>
 
                     </div>

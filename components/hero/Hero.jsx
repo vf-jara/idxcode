@@ -22,10 +22,10 @@ export default function Hero() {
                         </div>
                         <div className="lg:space-x-7 lg:flex lg:pb-20">
                             <div className="mb-3">
-                                <BotaoOrcamento texto="Solicite um Orçamento" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+                                <BotaoOrcamento texto="Solicite um Orçamento" />
                             </div>
                             <div>
-                                <BotaoOrcamento texto="O que fazemos" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+                                <BotaoOrcamento texto="O que fazemos" />
                             </div>
                         </div>
                     </div>

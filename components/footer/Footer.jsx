@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
     return (
@@ -13,10 +14,26 @@ export default function Footer() {
                 </div>
                 <div className="mt-10 mb-8">
                     <ul className="text-white justify-center md:flex">
-                        <li className="mx-4">Home</li>
-                        <li className="mx-4">O que Fazemos</li>
-                        <li className="mx-4">Quem Somos</li>
-                        <li className="mx-4">Orçamento</li>
+                        <li className="mx-4">
+                            <Link href="/">
+                                <a>Home</a>
+                            </Link>
+                        </li>
+                        <li className="mx-4">
+                            <Link href="#services">
+                                <a>O que Fazemos</a>
+                            </Link>
+                        </li>
+                        <li className="mx-4">
+                            <Link href="#projects">
+                                <a>Projetos</a>
+                            </Link>
+                        </li>
+                        <li className="mx-4">
+                            <Link href="#contact">
+                                <a>Orçamento</a>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
                 <div>
@@ -25,7 +42,7 @@ export default function Footer() {
                     <a src="/" className="mx-4"><Image src="/assets/images/phone.svg" width={24} height={24} /></a>
                 </div>
                 <div className="mt-10 mx-8 pb-8 text-white text-sm ">
-                © Copyright 2022 - idxcode
+                    © Copyright 2022 - idxcode
                 </div>
             </div>
 
