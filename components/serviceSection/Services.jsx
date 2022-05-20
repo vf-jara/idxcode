@@ -4,11 +4,13 @@ import icon2 from '/public/assets/images/icon2.png';
 import icon3 from '/public/assets/images/icon3.png';
 import { BsFillCheckCircleFill } from 'react-icons/bs'
 import BotaoOrcamento from '../botaoOrcamento/BotaoOrcamento';
+import bgImg from '../../assets/elipse.png';
 
 export default function Services() {
+
     return (
         <>
-            <div className="lg:my-16" id="services">
+            <div className="lg:py-16 bg-green2" id="services">
                 <div className="container mx-auto md:flex pt-20">
                     <div className="sm:w-full lg:w-5/12">
                         <div className="title">
@@ -23,11 +25,11 @@ export default function Services() {
                             <div className="lg:flex-col w-full lg:w-6/12">
                                 <div className="flex mb-5">
                                     <BsFillCheckCircleFill className="text-[#00ff00] mr-1 text-[25px]" />
-                                    <p  className="text-lg font-medium">Sites Modernos e Mobile First</p>
+                                    <p className="text-lg font-medium">Sites Modernos e Mobile First</p>
                                 </div>
                                 <div className="flex mb-5">
                                     <BsFillCheckCircleFill className="text-[#00ff00] mr-1 text-[25px]" />
-                                    <p  className="text-lg font-medium">Gestão de Tráfego</p>
+                                    <p className="text-lg font-medium">Gestão de Tráfego</p>
                                 </div>
                             </div>
                             <div className="lg:flex-col w-full lg:w-6/12">
@@ -42,7 +44,7 @@ export default function Services() {
                             </div>
                         </div>
                         <div className="justify-center lg:block">
-                            <BotaoOrcamento texto="Solicite um Orçamento" />
+                            <BotaoOrcamento texto="Solicite um Orçamento" url="#contact" />
 
                         </div>
                     </div>

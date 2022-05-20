@@ -11,9 +11,6 @@ module.exports = {
         'idx-green': '#00ff00',
         'idx-cinza': '#00FF000D',
       },
-      backgroundImage: {
-        'split-white-black': 'linear-gradient(to bottom, white 50%, #121313 50%)'
-      },
       height: {
         'heroHeight': '80vh'
       },

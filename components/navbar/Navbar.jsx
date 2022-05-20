@@ -28,7 +28,7 @@ export default function Navbar() {
                                     <li className="hover:text-black transition-all ease-in-out delay-25"><Link href="#services"><a>O que Fazemos</a></Link></li>
                                     <li className="hover:text-black transition-all ease-in-out delay-25"><Link href="#projects"><a>Projetos</a></Link></li>
                                 </ul>
-                                <BotaoOrcamento texto="Solicite um Orçamento"  />
+                                <BotaoOrcamento texto="Solicite um Orçamento" url="#contact" />
                             </div>
                         </div>
                     </nav>
