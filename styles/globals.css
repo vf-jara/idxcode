@@ -33,16 +33,21 @@ a {
 
 .bg-green2 {
   background-image: url('/assets/images/elipse2x.png');
-  background-position: -40% 90%;
-  background-repeat: no-repeat;
+  background-position:10% 10%;
 }
-@media(max-width:767px) {
+@media(min-width:767px) {
   .bg-green2{
-    background-size: cover;
-    background-position:90% 150%;
+    background-image: url('/assets/images/elipse2x.png');
+    background-position: -40% 90%;
+    background-repeat: no-repeat;
   }
 }
-
+@media(min-width:1400px){
+  .bg-green2{
+    background-position: -150% 95%;
+    background-repeat: no-repeat;
+  }
+}
 .title {
   font-size: 48px;
   line-height: 52px;
