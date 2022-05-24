@@ -25,13 +25,13 @@ export default function Hero() {
                                 <BotaoOrcamento texto="Solicite um Orçamento" url="#contact" />
                             </div>
                             <div>
-                                <BotaoOrcamento texto="O que fazemos" url="#services"/>
+                                <BotaoOrcamento texto="O que fazemos" url="#services" />
                             </div>
                         </div>
                     </div>
                     <div className="hidden lg:block mb-10 flex-col w-1/2 relative">
                         <div className="absolute bottom-[70px] right-[-10vw]">
-                            <Image src={imagem} alt='mãos apontando para o computador' width='692' height='478' />
+                            <Image src={imagem} alt='pessoas trabalhando no computador' width='692' height='478' />
                         </div>
                     </div>
                 </div>

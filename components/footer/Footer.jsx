@@ -8,6 +8,8 @@ export default function Footer() {
                 <div className="ml-8">
                     <Image
                         src="/assets/images/logoWhite.png"
+                        
+                        alt="Logo"
                         width={300}
                         height={60}
                     />
@@ -37,12 +39,12 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div>
-                    <a src="/" className="mx-4"><Image src="/assets/images/mail.svg" width={24} height={24} /></a>
-                    <a src="/" className="mx-4"><Image src="/assets/images/location.svg" width={24} height={24} /></a>
-                    <a src="/" className="mx-4"><Image src="/assets/images/phone.svg" width={24} height={24} /></a>
+                    <a href="mailto:contato@idxcode.com.br" className="mx-4"><Image src="/assets/images/mail.svg" width={24} height={24} alt="email" target="_blank" /></a>
+                    <a href="https://goo.gl/maps/rh1Hn39Tzn52DE1P8" className="mx-4"><Image src="/assets/images/location.svg" width={24} height={24} alt="localização" target="_blank" /></a>
+                    <a href="https://wa.me/5567998382687" className="mx-4"><Image src="/assets/images/phone.svg" width={24} height={24} alt="telefone" target="_blank" /></a>
                 </div>
                 <div className="mt-10 mx-8 pb-8 text-white text-sm ">
-                    © Copyright 2022 - idxcode
+                    © Copyright 2022 - <strong>Idxcode</strong>
                 </div>
             </div>
 
