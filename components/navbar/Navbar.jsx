@@ -20,7 +20,7 @@ export default function Navbar() {
                 <div className="container mx-auto">
                     <nav className="lg:flex bg-white justify-between py-3">
                         <div className="bg-white">
-                            <div className={`${styles.logoContainer} pt-2`}>
+                            <div className={`${styles.logoContainer} lg:pt-2`}>
                                 <Image
                                     src={logo}
                                     alt="Logo Idxcode"
