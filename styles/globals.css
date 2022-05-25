@@ -33,21 +33,24 @@ a {
 
 .bg-green2 {
   background-image: url('/assets/images/elipse2x.png');
-  background-position:10% 10%;
+  background-position: 10% 10%;
 }
+
 @media(min-width:767px) {
-  .bg-green2{
+  .bg-green2 {
     background-image: url('/assets/images/elipse2x.png');
     background-position: -40% 90%;
     background-repeat: no-repeat;
   }
 }
-@media(min-width:1400px){
-  .bg-green2{
+
+@media(min-width:1400px) {
+  .bg-green2 {
     background-position: -150% 95%;
     background-repeat: no-repeat;
   }
 }
+
 .title {
   font-size: 48px;
   line-height: 52px;
@@ -56,7 +59,7 @@ a {
 
 .titleHero {
   font-size: 54px;
-  line-height: 75px;
+  line-height: 65px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif !important;
 }

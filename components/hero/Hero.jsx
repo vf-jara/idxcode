@@ -5,7 +5,9 @@ import BotaoOrcamento from '../botaoOrcamento/BotaoOrcamento';
 export default function Hero() {
     return (
         <>
-            <div className="w-full h-2/5 bg-white">
+        <div className="h-full lg:-mt-12">
+
+            <div className="w-full bg-white">
                 <div className="container mx-auto flex">
                     <div className="mb-4 lg:flex-col w-full lg:w-1/2">
                         <h1 className="titleHero">Soluções em<br /> tecnologia para a <br />sua empresa crescer</h1>
@@ -14,7 +16,7 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-            <div className="w-full h-2/5 bg-idx-bg-black">
+            <div className="w-full bg-idx-bg-black">
                 <div className="container mx-auto flex">
                     <div className="mb-10 lg:flex-col w-full lg:w-1/2">
                         <div className="textWhite mt-6 mb-12 w-full lg:w-3/4">
@@ -36,6 +38,7 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
+        </div>
         </>
     )
 }
