@@ -41,7 +41,11 @@ export default function Navbar() {
                             <ul className={`lg:pl-3 pl-5 py-2 space-y-5 lg:space-y-0  lg:flex items-center lg:space-x-12 transition-all duration-500 ease-in absolute lg:static left-0 bg-white w-full lg:w-auto lg:z-auto z-[-1]  ${open ? 'top-20' : 'top-[-490px]'}`}>
                                 {
                                     Links.map((link) => (
-                                        <li key={link.name} className="pl-3 text-idx-black hover:text-black transition-all ease-in-out delay-25"><Link href={link.link}><a>{link.name}</a></Link></li>
+                                        <li key={link.name} className="pl-3 text-idx-black hover:text-black transition-all ease-in-out delay-25">
+                                            <Link href={link.link}>
+                                                <a>{link.name}</a>
+                                            </Link>
+                                        </li>
                                     ))
                                 }
                                 <div>

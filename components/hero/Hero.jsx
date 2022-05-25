@@ -9,7 +9,7 @@ export default function Hero() {
                 <div className="w-full bg-white">
                     <div className="container mx-auto flex">
                         <div className="mb-4 lg:flex-col w-full lg:w-1/2">
-                            <h1 className="titleHero">Soluções em<br /> tecnologia para a <br />sua empresa crescer</h1>
+                            <h1 className="titleHero">Soluções em<br /> tecnologia para a sua empresa crescer</h1>
                         </div>
                         <div className="hidden lg:flex-col mb-5 w-1/2">
                         </div>
