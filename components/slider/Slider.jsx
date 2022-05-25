@@ -12,8 +12,8 @@ export default function SliderHome() {
         slidesToShow: 2,
         responsive: [{
             breakpoint: 1550,
-            settings:{
-                slidesToShow:1,
+            settings: {
+                slidesToShow: 1,
             }
         }],
         centerMode: true,
@@ -24,24 +24,24 @@ export default function SliderHome() {
     return (
         <Slider {...settings}>
             <div>
-                <Slide src={imagem}/>
+                <Slide src={imagem} />
             </div>
             <div>
-                <Slide src={imagem}/>
+                <Slide src={imagem} />
             </div>
             <div>
-                <Slide src={imagem}/>
+                <Slide src={imagem} />
             </div>
             <div>
-                <Slide src={imagem}/>
+                <Slide src={imagem} />
             </div>
             <div>
-                <Slide src={imagem}/>
+                <Slide src={imagem} />
             </div>
             <div>
-                <Slide src={imagem}/>
+                <Slide src={imagem} />
             </div>
-            
+
         </Slider>
     );
 }

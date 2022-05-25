@@ -4,7 +4,7 @@ import icon2 from '/public/assets/images/icon2.png';
 import icon3 from '/public/assets/images/icon3.png';
 import { BsFillCheckCircleFill } from 'react-icons/bs'
 import BotaoOrcamento from '../botaoOrcamento/BotaoOrcamento';
-import bgImg from '../../assets/elipse.png';
+
 
 export default function Services() {
 
