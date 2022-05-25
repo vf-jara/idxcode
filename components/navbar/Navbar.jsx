@@ -21,12 +21,16 @@ export default function Navbar() {
                     <nav className="lg:flex bg-white justify-between py-3">
                         <div className="bg-white">
                             <div className={`${styles.logoContainer} lg:pt-2`}>
-                                <Image
-                                    src={logo}
-                                    alt="Logo Idxcode"
-                                    width="150px"
-                                    height="30px"
-                                />
+                                <Link href="/">
+                                    <a>
+                                        <Image
+                                            src={logo}
+                                            alt="Logo Idxcode"
+                                            width="150px"
+                                            height="30px"
+                                        />
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                         <div>
