@@ -1,6 +1,75 @@
+import { useState } from 'react'
 import styles from './contactForm.module.css'
 export default function ContactForm() {
+    const [name, setName] = useState("")
+    const [mail, setMail] = useState("")
+    const [phone, setPhone] = useState("")
+    const [message, setMessage] = useState("")
+
+    const [errors, setErrors] = useState({});
+
+    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+    const [showFailureMessage, setShowFailureMessage] = useState(false);
+
+    const handleValidation = () => {
+        let tempErrors = {};
+        let isValid = true;
+
+        if (name.length <= 0) {
+            tempErrors["name"] = true;
+            isValid = false;
+        }
+        if (mail.length <= 0) {
+            tempErrors["mail"] = true;
+            isValid = false;
+        }
+        if (phone.length <= 0) {
+            tempErrors["phone"] = true;
+            isValid = false;
+        }
+        if (message.length <= 0) {
+            tempErrors["message"] = true;
+            isValid = false;
+        }
+
+        setErrors({ ...tempErrors });
+        console.log("errors", errors);
+        return isValid;
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        let isValidForm = handleValidation();
+
+        if (isValidForm) {
+            const res = await fetch("/api/sendgrid", {
+                body: JSON.stringify({
+                    mail: mail,
+                    name: name,
+                    phone: phone,
+                    message: message,
+                }),
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                method: "POST",
+            });
+
+            const { error } = await res.json();
+            if (error) {
+                console.log(error);
+                setShowSuccessMessage(false);
+                setShowFailureMessage(true);
+                return;
+            }
+            setShowSuccessMessage(true);
+            setShowFailureMessage(false);
+        }
+        console.log(name, mail, phone, message);
+    };
     return (
+
         <>
             <div className="text-center">
                 <h2 className={styles.formTitle}>
@@ -11,9 +80,9 @@ export default function ContactForm() {
                 </p>
             </div>
             <div className=" w-full px-4 lg:px-20 pb-11 pt-10 mx-auto">
-                <form className={styles.mainForm} action="">
+                <form className={styles.mainForm} onSubmit={handleSubmit} action="">
                     <label htmlFor="nome" className="font-semibold text-lg">Qual seu nome?</label>
-                    <input type='text' name="nome" className="
+                    <input type='text' value={name} onChange={e => setName(e.target.value)} name="nome" className="
                     form-input 
                     w-full 
                     py-3
@@ -30,7 +99,7 @@ export default function ContactForm() {
                         placeholder="Nome Completo" required />
 
                     <label htmlFor="email" className="font-semibold text-lg">Qual o seu E-mail?</label>
-                    <input type="text" name="email" className="
+                    <input type="text" value={mail} onChange={e => setMail(e.target.value)} name="email" className="
                     form-input 
                     w-full 
                     py-3
@@ -47,7 +116,7 @@ export default function ContactForm() {
                         placeholder="Seu melhor e-mail" required />
 
                     <label htmlFor="whats" className="font-semibold text-lg">Qual o seu WhatsApp?</label>
-                    <input type="text" name="whats" className="
+                    <input type="text" value={phone} onChange={e => setPhone(e.target.value)} name="whats" className="
                     form-input 
                     py-3
                     mt-1.5
@@ -64,7 +133,7 @@ export default function ContactForm() {
                         placeholder="(xx) xxxx-xxxx" required />
 
                     <label htmlFor="description" className="font-semibold text-lg">Conte-nos um pouco do seu projeto...</label>
-                    <textarea name="description" rows="3" className="
+                    <textarea name="description" value={message} onChange={e => setMessage(e.target.value)} rows="3" className="
                     form-textarea 
                     mt-1.5
                     mb-6
@@ -109,7 +178,19 @@ export default function ContactForm() {
                             </span>
                         </div>
                     </div>
-                    <button type="submit" className={styles.button}>Solicitar Orçamento</button>
+                    <button type="submit" id="formSubmit" className={styles.button}>Solicitar Orçamento</button>
+                    <div className="text-left">
+                        {showSuccessMessage && (
+                            <p className="text-green-500 font-semibold text-sm my-2">
+                                Obrigado! Sua mensagem foi enviada com sucesso!
+                            </p>
+                        )}
+                        {showFailureMessage && (
+                            <p className="text-red-500">
+                                Algo deu errado! Por favor, tente novamente.
+                            </p>
+                        )}
+                    </div>
                 </form>
             </div>
 
