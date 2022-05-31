@@ -23,7 +23,7 @@ export default function Footer() {
                         </li>
                         <li className="mx-4">
                             <Link href="#services">
-                                <a>O que Fazemos</a>
+                                <a>O que fazemos</a>
                             </Link>
                         </li>
                         <li className="mx-4">

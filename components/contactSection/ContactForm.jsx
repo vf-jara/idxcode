@@ -73,7 +73,7 @@ export default function ContactForm() {
         <>
             <div className="text-center">
                 <h2 className={styles.formTitle}>
-                    Solicite um Orçamento
+                    Solicite um orçamento
                 </h2>
                 <p className="text">
                     Preencha corretamente os campos abaixo
@@ -81,7 +81,7 @@ export default function ContactForm() {
             </div>
             <div className=" w-full px-4 lg:px-20 pb-11 pt-10 mx-auto">
                 <form className={styles.mainForm} onSubmit={handleSubmit} action="">
-                    <label htmlFor="nome" className="font-semibold text-lg">Qual seu nome?</label>
+                    <label htmlFor="nome" className="font-semibold text-lg">Qual o seu nome?</label>
                     <input type='text' value={name} onChange={e => setName(e.target.value)} name="nome" className="
                     form-input 
                     w-full 
@@ -96,9 +96,9 @@ export default function ContactForm() {
                     focus:ring 
                     focus:ring-lime-200 
                     focus:ring-opacity-50"
-                        placeholder="Nome Completo" required />
+                        placeholder="Nome completo" required />
 
-                    <label htmlFor="email" className="font-semibold text-lg">Qual o seu E-mail?</label>
+                    <label htmlFor="email" className="font-semibold text-lg">Qual o seu e-mail?</label>
                     <input type="text" value={mail} onChange={e => setMail(e.target.value)} name="email" className="
                     form-input 
                     w-full 
@@ -130,7 +130,7 @@ export default function ContactForm() {
                     focus:ring 
                     focus:ring-lime-200 
                     focus:ring-opacity-50"
-                        placeholder="(xx) xxxx-xxxx" required />
+                        placeholder="(xx) xxxxx-xxxx" required />
 
                     <label htmlFor="description" className="font-semibold text-lg">Conte-nos um pouco do seu projeto...</label>
                     <textarea name="description" value={message} onChange={e => setMessage(e.target.value)} rows="3" className="
@@ -147,7 +147,7 @@ export default function ContactForm() {
                     focus:ring 
                     focus:ring-lime-200 
                     focus:ring-opacity-50"
-                        placeholder="Informe sobre o seu projeto e como imagina que podemos ajuda-lo" />
+                        placeholder="Informe sobre o seu projeto e como imagina que podemos ajudá-lo" />
 
                     <p className="font-semibold text-lg">Como prefere que nossa equipe comercial fale com você?</p>
                     <div className="lg:flex justify-between">
@@ -178,7 +178,7 @@ export default function ContactForm() {
                             </span>
                         </div>
                     </div>
-                    <button type="submit" id="formSubmit" className={styles.button}>Solicitar Orçamento</button>
+                    <button type="submit" id="formSubmit" className={styles.button}>Solicitar orçamento</button>
                     <div className="text-left">
                         {showSuccessMessage && (
                             <p className="text-green-500 font-semibold text-sm my-2">

@@ -25,7 +25,7 @@ export default function Services() {
                             <div className="lg:flex-col w-full lg:w-6/12">
                                 <div className="flex mb-5">
                                     <BsFillCheckCircleFill className="text-[#00ff00] mr-1 text-[25px]" />
-                                    <p className="text-lg font-medium">Sites Modernos e Mobile First</p>
+                                    <p className="text-lg font-medium">Sites modernos e Mobile First</p>
                                 </div>
                                 <div className="flex mb-5">
                                     <BsFillCheckCircleFill className="text-[#00ff00] mr-1 text-[25px]" />
@@ -44,7 +44,7 @@ export default function Services() {
                             </div>
                         </div>
                         <div className="justify-center lg:block">
-                            <BotaoOrcamento texto="Solicite um Orçamento" url="#contact" />
+                            <BotaoOrcamento texto="Solicite um orçamento" url="#contact" />
 
                         </div>
                     </div>
@@ -53,7 +53,7 @@ export default function Services() {
                             <ServiceBox icon={icon1} title="Desenvolvimento de Sites" text="Ninguém constrói casa em terreno alugado. Tenha o controle do seu público e das suas informações." />
                         </div>
                         <div className="lg:pl-20 my-8">
-                            <ServiceBox icon={icon2} title="Gestão de Tráfego" text="Apareça para a pessoa certa, no momento certo , com o anúncio certo e escale as suas vendas." />
+                            <ServiceBox icon={icon2} title="Gestão de Tráfego" text="Apareça para a pessoa certa, no momento certo, com o anúncio certo e escale as suas vendas." />
                         </div>
                         <div className="lg:pl-40">
                             <ServiceBox icon={icon3} title="Chatbots para WhatsApp" text="Muito volume de atendimento? Automatize as principais dúvidas e deixe o seu atendimento com o que realmente importa." />

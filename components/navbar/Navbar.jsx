@@ -10,7 +10,7 @@ import { useState } from 'react'
 export default function Navbar() {
     const Links = [
         { name: "Home", link: "/" },
-        { name: "O que Fazemos", link: "#services" },
+        { name: "O que fazemos", link: "#services" },
         { name: "Projetos", link: "#projects" },
     ]
     const [open, setOpen] = useState(false);
@@ -49,7 +49,7 @@ export default function Navbar() {
                                     ))
                                 }
                                 <div>
-                                    <BotaoOrcamento texto="Solicite um Orçamento" url="#contact" />
+                                    <BotaoOrcamento texto="Solicite um orçamento" url="#contact" />
                                 </div>
                             </ul>
 
