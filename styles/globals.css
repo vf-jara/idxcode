@@ -52,27 +52,27 @@ a {
 }
 
 .title {
-  font-size: 48px;
-  line-height: 52px;
+  font-size: 40px;
+  line-height: 50px;
   font-weight: 600;
 }
 
 .titleHero {
-  font-size: 54px;
-  line-height: 65px;
+  font-size: 45px;
+  line-height: 55px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif !important;
 }
 
 .text {
   font-size: 18px;
-  line-height: 32px;
+  line-height: 28px;
   color: rgba(18, 19, 19, .4);
 }
 
 .text2 {
   font-size: 18px;
-  line-height: 32px;
+  line-height: 28px;
   color: #121213;
   font-weight: 500;
   margin-bottom: 32px;
@@ -80,7 +80,7 @@ a {
 
 .textWhite {
   font-size: 18px;
-  line-height: 32px;
+  line-height: 28px;
   color: rgb(255, 255, 255, 0.5);
 }
 
@@ -98,8 +98,8 @@ a {
   }
 
   .text {
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 28px;
   }
 
   .text2 {
