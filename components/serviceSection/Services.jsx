@@ -4,10 +4,15 @@ import icon2 from '/public/assets/images/icon2.png';
 import icon3 from '/public/assets/images/icon3.png';
 import { BsFillCheckCircleFill } from 'react-icons/bs'
 import BotaoOrcamento from '../botaoOrcamento/BotaoOrcamento';
+import { useInView } from 'react-intersection-observer';
 
 
 export default function Services() {
-
+    const { ref, inView, entry } = useInView({
+        root:null,
+        threshold: 1,
+        triggerOnce: true
+    })
     return (
         <>
             <div className="lg:py-16 bg-green2" id="services">
@@ -23,7 +28,7 @@ export default function Services() {
                         </div>
                         <div className="lg:flex w-full lg:gap-x-3 mb-6 lg:mb-12">
                             <div className="lg:flex-col w-full lg:w-6/12">
-                                <div className="flex mb-5">
+                                <div className="flex mb-5 fadeBlur">
                                     <BsFillCheckCircleFill className="text-[#00ff00] mr-1 text-[25px]" />
                                     <p className="text-lg font-medium">Sites modernos e Mobile First</p>
                                 </div>
@@ -49,13 +54,13 @@ export default function Services() {
                         </div>
                     </div>
                     <div className="w-full pt-20 lg:pt-0 lg:w-7/12">
-                        <div>
+                        <div ref={ref} className={`${inView? "slideRight":"opacity-0"}`}>
                             <ServiceBox icon={icon1} title="Desenvolvimento de Sites" text="Ninguém constrói casa em terreno alugado. Tenha o controle do seu público e das suas informações." />
                         </div>
-                        <div className="lg:pl-20 my-8">
+                        <div ref={ref} className={`lg:pl-20 my-8 ${inView? "slideRight delay-1":"opacity-0"}`}>
                             <ServiceBox icon={icon2} title="Gestão de Tráfego" text="Apareça para a pessoa certa, no momento certo, com o anúncio certo e escale as suas vendas." />
                         </div>
-                        <div className="lg:pl-40">
+                        <div ref={ref} className={`lg:pl-40 ${inView? "slideRight delay-2":"opacity-0"}`}>
                             <ServiceBox icon={icon3} title="Chatbots para WhatsApp" text="Muito volume de atendimento? Automatize as principais dúvidas e deixe o seu atendimento com o que realmente importa." />
                         </div>
                     </div>
