@@ -10,7 +10,7 @@ import { useInView } from 'react-intersection-observer';
 export default function Services() {
     const { ref, inView, entry } = useInView({
         root:null,
-        threshold: 1,
+        threshold: 0,
         triggerOnce: true
     })
     return (
@@ -26,29 +26,29 @@ export default function Services() {
                                 Transformamos tecnologia em ativos digitais para a sua empresa crescer com consistência e aproveitar todo o potencial do marketing digital sem se preocupar com uma equipe técnica internamente.
                             </p>
                         </div>
-                        <div className="lg:flex w-full lg:gap-x-3 mb-6 lg:mb-12">
+                        <div ref={ref} className="lg:flex w-full lg:gap-x-3 mb-6 lg:mb-12">
                             <div className="lg:flex-col w-full lg:w-6/12">
-                                <div className="flex mb-5 fadeBlur">
+                                <div className={`flex mb-5 ${inView? "fadeBlur" : "opacity-0"}`}>
                                     <BsFillCheckCircleFill className="text-[#00ff00] mr-1 text-[25px]" />
                                     <p className="text-lg font-medium">Sites modernos e Mobile First</p>
                                 </div>
-                                <div className="flex mb-5">
+                                <div className={`flex mb-5 ${inView? "fadeBlur delay-1" : "opacity-0"}`}>
                                     <BsFillCheckCircleFill className="text-[#00ff00] mr-1 text-[25px]" />
                                     <p className="text-lg font-medium">Gestão de Tráfego</p>
                                 </div>
                             </div>
                             <div className="lg:flex-col w-full lg:w-6/12">
-                                <div className="flex mb-5">
+                                <div className={`flex mb-5 ${inView? "fadeBlur delay-2" : "opacity-0"}`}>
                                     <BsFillCheckCircleFill className="text-[#00ff00] mr-1 text-[25px]" />
                                     <p className="text-lg font-medium">Integrações entre sistemas</p>
                                 </div>
-                                <div className="flex mb-5">
+                                <div className={`flex mb-5 ${inView? "fadeBlur delay-3" : "opacity-0"}`}>
                                     <BsFillCheckCircleFill className="text-[#00ff00] mr-1 text-[25px] justify-center align-middle my-auto" />
                                     <p className="text-lg font-medium">Chatbots e Automações</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="justify-center lg:block">
+                        <div ref={ref} className={`justify-center lg:block ${inView? "slideLeft delay-4" : "opacity-0"}`}>
                             <BotaoOrcamento texto="Solicite um orçamento" url="#contact" />
 
                         </div>

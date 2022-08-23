@@ -1,11 +1,12 @@
 import SliderHome from '../slider/Slider'
 import BotaoOrcamento from '../botaoOrcamento/BotaoOrcamento'
 import { useInView } from 'react-intersection-observer'
+import { useCallback } from 'react'
 
 export default function Projects() {
     const { ref, inView, entry } = useInView({
-        root:null,
-        threshold: 1,
+        rootMargin:'0px',
+        threshold: 0.1,
         triggerOnce: true,
     })
     return (
@@ -19,6 +20,7 @@ export default function Projects() {
                     <div className="my-10">
                         <p ref={ref} className={`text ${inView? "slideRight delay-1" : "opacity-0"}`}>Dos mais simples websites às mais complexas<br /> integrações com Inteligência Artificial.</p>
                     </div>
+
                     <div className={`${inView? "slideRight delay-2" : "opacity-0"}`}>
                         <BotaoOrcamento texto="Solicite um orçamento" url="#contact" />
                     </div>
@@ -28,7 +30,7 @@ export default function Projects() {
                 </div>
             </div>
             <div className="w-full mx-auto bg-idx-bg-black">
-                <div className="container mx-auto md:flex py-12 lg:py-24">
+                <div ref={ref} className={`container mx-auto md:flex py-12 lg:py-24 ${inView? "slideRight" : "opacity-0"}`}>
                     <div className="lg:w-1/2">
                         <h1 className="title text-white">Transformamos tecnologia em ativos digitais</h1>
                     </div>

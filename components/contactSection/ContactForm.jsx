@@ -75,7 +75,7 @@ export default function ContactForm() {
                 <h2 className={styles.formTitle}>
                     Solicite um orçamento
                 </h2>
-                <p className="text">
+                <p className="text px-2">
                     Preencha corretamente os campos abaixo
                 </p>
             </div>
