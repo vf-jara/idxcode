@@ -9,9 +9,7 @@ export default function Projects() {
         threshold: 0.1,
         triggerOnce: true,
     })
-    {
-        console.log(teste)
-    }
+
     return (
         <>
             <div id="projects" className="w-full lg:flex lg:flex-row-reverse py-12 lg:pt-36">
