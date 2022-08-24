@@ -13,12 +13,12 @@ export default function Trafego() {
         </Head>
         <div className="min-h-screen w-full bg-black">
             <div className="flex flex-col py-8 bg-[url('/assets/images/bg-trafego.png')] md:bg-[url('/assets/images/bg-desktop.png')] md:bg-bottom bg-cover">
-                <div className="flex flex-col gap-8 px-5 md:justify-center md:items-center md:mx-auto md:min-h-[50vh] md:w-8/12 md:gap-12 md:py-16 md:px-20 md:text-center">
-                    <h1 className="text-white text-3xl font-semibold md:text-5xl md:leading-snug md:mt-8">Apareça para as <font className="text-idx-green font-bold">pessoas certas</font> quando elas buscarem pelo seu produto ou serviço <font className="text-idx-green font-bold">on-line</font>!</h1>
+                <div className="flex flex-col gap-8 px-5 md:justify-center md:items-center md:mx-auto md:min-h-[50vh] md:w-9/12 md:py-16 md:px-20 md:text-center">
+                    <h1 className="text-white text-3xl font-semibold md:text-5xl md:leading-tight">Apareça para as <font className="text-idx-green font-bold">pessoas certas</font> quando elas buscarem pelo seu produto ou serviço <font className="text-idx-green font-bold">on-line</font>!</h1>
 
-                    <h2 className="text-white text-base font-normal leading-6 md:text-xl md:w-10/12 md:mt-8">Existe um grande fluxo de pessoas passando pelas maiores <font className="text-idx-green font-bold">avenidas digitais</font> neste exato momento e olhando <font className="font-bold">vitrines</font> e <font className="font-bold">outdoors virtuais</font> de centenas de milhares de empresas.</h2>
-                    <h2 className="text-white text-base leading-6 font-semibold md:text-2xl md:w-10/12 md:mt-8">A sua empresa está sendo vista nessas <font className="text-idx-green font-bold">avenidas digitais</font>?</h2>
-                    <div className="flex justify-center md:hidden"><Image width="40" height="40" objectFit="contain" className="opacity-75" src="/assets/images/scroll-bar@2x.png" alt="scroll" /></div>
+                    <h2 className="text-white text-base font-normal leading-6 md:text-xl md:w-10/12 md:mt-4">Existe um grande fluxo de pessoas passando pelas maiores <font className="text-idx-green font-bold">avenidas digitais</font> neste exato momento e olhando <font className="font-bold">vitrines</font> e <font className="font-bold">outdoors virtuais</font> de centenas de milhares de empresas.</h2>
+                    <h2 className="text-white text-base leading-6 font-semibold md:text-2xl md:w-10/12 md:mt-4">A sua empresa está sendo vista nessas <font className="text-idx-green font-bold">avenidas digitais</font>?</h2>
+                    <div className="flex justify-center"><Image width="40" height="40" objectFit="contain" className="opacity-75" src="/assets/images/scroll-bar@2x.png" alt="scroll" /></div>
                 </div>
             </div>
             <div className="flex flex-col gap-8 px-5 py-8 md:justify-center md:items-center md:mx-auto md:w-8/12 md:gap-12 md:py-16 md:px-20 md:text-center">
