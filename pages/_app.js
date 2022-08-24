@@ -28,10 +28,12 @@ function MyApp({ Component, pageProps }) {
     <>
       {/* Global Site Tag (gtag.js) - Google Analytics 4 */}
       <Script
+        id="GA4"
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
       />
       <Script
+        id="GA4-script"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
