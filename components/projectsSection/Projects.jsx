@@ -6,6 +6,7 @@ import { useRef } from 'react'
 export default function Projects() {
     const slide = useRef(null)
     const title = useRef(null)
+    const faixa = useRef(null)
 
     return (
         <>
@@ -43,11 +44,22 @@ export default function Projects() {
                 </div>
             </div>
             <div className="w-full mx-auto bg-idx-bg-black">
-                <div className={`container mx-auto md:flex py-12 lg:py-24`}>
-                    <div className="lg:w-1/2">
+                <div ref={faixa} className={`container mx-auto md:flex py-12 lg:py-24`}>
+                    <motion.div className="lg:w-1/2"
+                        initial={{ opacity: 0, x: "+100%" }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                    >
+
                         <h1 className="title text-white">Transformamos tecnologia em ativos digitais</h1>
-                    </div>
-                    <div className="pt-6 lg:pt-0 lg:w-1/2 lg:pl-24 flex flex-col justify-center">
+                    </motion.div>
+                    <motion.div className="pt-6 lg:pt-0 lg:w-1/2 lg:pl-24 flex flex-col justify-center"
+                        initial={{ opacity: 0, x: "+100%" }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                    >
                         <div className="mb-5">
                             <p className="textWhite">Todo o potencial da tecnologia atrelada ao seu negócio para fazer você vender mais.</p>
                         </div>
@@ -55,7 +67,7 @@ export default function Projects() {
                             <BotaoOrcamento texto="Solicite um orçamento" url="#contact" />
                         </div>
 
-                    </div>
+                    </motion.div>
                 </div>
 
             </div>
