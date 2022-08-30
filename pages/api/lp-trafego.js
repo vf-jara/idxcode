@@ -41,8 +41,9 @@ async function leadTrafego(req, res) {
         // console.log(error);
         return res.json({ error: error.message });
     }
+  }else{
+    return res.json({ error: "" });
   }
-  return res.json({ error: "" });
 }
 
 export default leadTrafego;
