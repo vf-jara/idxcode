@@ -35,7 +35,7 @@ async function leadTrafego(req, res) {
       </body>
       </html>`,
         }).then(() => {
-          res.json({ status: "sent" });
+          return res.json({ status: "sent" });
         });
     } catch (error) {
         // console.log(error);
