@@ -97,18 +97,19 @@ export default function Formulario(props) {
             ) : (
                 <>
                     <form className="trafego-form px-1 py-0 flex flex-col gap-4">
-                        <Input value={nome} onChange={(e) => setNome(e.target.value)} size="large" className="formInput" width="100%" status="success" color="success" bordered label="Qual o seu nome?" />
-                        <Input value={empresa} onChange={(e) => setEmpresa(e.target.value)} size="large" className="formInput" width="100%" status="success" color="success" bordered label="Qual o nome da sua  empresa?" />
-                        <Input value={email} onChange={(e) => setEmail(e.target.value)} size="large" className="formInput" width="100%" status="success" color="success" bordered type="email" label="Qual o seu email?" />
-                        <Input value={whatsApp} onChange={(e) => setWhatsApp(e.target.value)} size="large" className="formInput" width="100%" status="success" color="success" bordered type="tel" label="Qual o seu WhatsApp?" />
+                        <Input value={nome} onChange={(e) => setNome(e.target.value)} size="large" className="formInput" width="100%" status="default" label="Qual o seu nome?" />
+                        <Input value={empresa} onChange={(e) => setEmpresa(e.target.value)} size="large" className="formInput" width="100%" status="default" label="Qual o nome da sua  empresa?" />
+                        <Input value={email} onChange={(e) => setEmail(e.target.value)} size="large" className="formInput" width="100%" status="default" type="email" label="Qual o seu email?" />
+                        <Input value={whatsApp} onChange={(e) => setWhatsApp(e.target.value)} size="large" className="formInput" width="100%" status="default" type="tel" label="Qual o seu WhatsApp?" />
                         <div>
                             <label className="text-white px-1">Qual a área da sua empresa?</label>
-                            <select value={area} onChange={(e) => setArea(e.target.value)} className="formInput w-full mt-1 h-[50px] bg-black text-white border-2 focus:border-idx-green border-white " width="100%">
+                            <select value={area} onChange={(e) => setArea(e.target.value)} className="formInput w-full mt-1 h-[50px] bg-white text-black focus:border-idx-green border-none " width="100%">
                                 <option>Selecione</option>
+                                <option value="Varejo">Varejo</option>
                                 <option value="Saúde">Saúde</option>
+                                <option value="Advocacia">Advocacia</option>
                                 <option value="E-commerce">E-commerce</option>
                                 <option value="Educação">Educação</option>
-                                <option value="Varejo">Varejo</option>
                                 <option value="Indústria">Indústria</option>
                                 <option value="SAAS">SAAS</option>
                                 <option value="Outra">Outra</option>
@@ -116,7 +117,7 @@ export default function Formulario(props) {
                         </div>
                         <div>
                             <label className="text-white px-1">Faturamento Mensal? (R$)</label>
-                            <select value={faturamento} onChange={(e) => setFaturamento(e.target.value)} className="formInput w-full mt-1 h-[50px] bg-black text-white border-2 focus:border-idx-green border-white " width="100%">
+                            <select value={faturamento} onChange={(e) => setFaturamento(e.target.value)} className="formInput w-full mt-1 h-[50px] bg-white text-black focus:border-idx-green border-white " width="100%">
                                 <option>Selecione</option>
                                 <option value="25k">até R$ 25.000,00 / mês</option>
                                 <option value="50k">até R$ 50.000,00 / mês</option>
