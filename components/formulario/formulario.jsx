@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
-import { Input } from '@nextui-org/react';
+import { Input, Loading } from '@nextui-org/react';
 
 export default function Formulario(props) {
+    const [loading, setLoading] = useState(false);
     const [enviado, setEnviado] = useState(false);
     const [showFailureMessage, setShowFailureMessage] = useState(false);
     const [nome, setNome] = useState("");
@@ -47,6 +48,7 @@ export default function Formulario(props) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true);
 
         let isValidForm = handleValidation();
 
@@ -70,10 +72,12 @@ export default function Formulario(props) {
             if (error) {
                 setEnviado(false);
                 setShowFailureMessage(true);
+                setLoading(false);
                 return;
             }else{
                 setEnviado(true);
                 setShowFailureMessage(false);
+                setLoading(false);
                 return;
             }
         }else{
@@ -128,7 +132,13 @@ export default function Formulario(props) {
                             </select>
                         </div>
                     </form>
-                    <button onClick={handleSubmit} className="w-full h-14 mt-8 px-4 py-3 bg-idx-green text-black hover:border-2 hover:border-idx-green hover:text-idx-green hover:bg-black font-bold text-xl transition-all md:text-2xl md:h-20">Quero vender mais!</button>
+                    {loading ? (
+                        <button className="w-full h-14 mt-8 px-4 py-3 text-idx-green cursor-default font-normal text-xl transition-all md:text-2xl md:h-20">
+                            <Loading size="lg" type="points" color="currentColor" />
+                        </button>
+                    ) : (
+                        <button onClick={handleSubmit} className="w-full h-14 mt-8 px-4 py-3 bg-idx-green text-black hover:border-2 hover:border-idx-green hover:text-idx-green hover:bg-black font-bold text-xl transition-all md:text-2xl md:h-20">Quero vender mais!</button>
+                    )}
                 </>
             ) }
         </div>
