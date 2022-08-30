@@ -35,14 +35,14 @@ async function leadTrafego(req, res) {
       </body>
       </html>`,
         }).then(() => {
-          res.status(200).json({ status: "sent" });
+          res.json({ status: "sent" });
         });
     } catch (error) {
         // console.log(error);
-        return res.status(error.statusCode || 500).json({ error: error.message });
+        return res.json({ error: error.message });
     }
   }
-  return res.status(200).json({ error: "" });
+  return res.json({ error: "" });
 }
 
 export default leadTrafego;
