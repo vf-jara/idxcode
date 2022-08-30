@@ -18,13 +18,13 @@ async function leadTrafego(req, res) {
         <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';">
               </div>
               <div class="container" style="margin-left: 20px;margin-right: 20px;">
-              <h3>Novo Lead: ${req.body.empresa}<br/></h3>
-              <p>Nome: ${req.body.nome}</p><br/>
-              <p>Empresa: ${req.body.empresa}</p><br/>
-              <p>E-mail para contato é:✉️${req.body.email}</p><br/>
-              <p>WhatsApp para contato: ${req.body.whatsapp}</p><br/>
-              <p>Área de atuação: ${req.body.area}</p><br/>
-              <p>Faturamento: ${req.body.faturamento}</p><br/>
+              <h3>Novo Lead: ${req.body.empresa}</h3>
+              <p>Nome: ${req.body.nome}</p>
+              <p>Empresa: ${req.body.empresa}</p>
+              <p>E-mail para contato é:✉️${req.body.email}</p>
+              <p>WhatsApp para contato: ${req.body.whatsapp}</p>
+              <p>Área de atuação: ${req.body.area}</p>
+              <p>Faturamento: ${req.body.faturamento}</p>
 
               <br>IDXCODE<br>Soluções em tecnologia<br>+55 67 99838-2687</p>
               <div class="footer-links" style="display: flex;justify-content: center;align-items: center;">

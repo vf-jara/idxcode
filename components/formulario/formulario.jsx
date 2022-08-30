@@ -56,7 +56,7 @@ export default function Formulario(props) {
                     email: email,
                     nome: nome,
                     empresa: empresa,
-                    whatsApp: whatsApp,
+                    whatsapp: whatsApp,
                     area: area,
                     faturamento: faturamento,
                 }),
@@ -66,13 +66,12 @@ export default function Formulario(props) {
                 method: "POST",
             });
 
-            const { error, status } = await res.json();
+            const { error } = await res.json();
             if (error) {
                 setEnviado(false);
                 setShowFailureMessage(true);
                 return;
-            }
-            if(status){
+            }else{
                 setEnviado(true);
                 setShowFailureMessage(false);
                 return;
