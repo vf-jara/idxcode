@@ -8,7 +8,6 @@ export default function Footer() {
                 <div className="ml-8">
                     <Image
                         src="/assets/images/logoWhite.png"
-                        
                         alt="Logo"
                         width={300}
                         height={60}

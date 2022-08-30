@@ -1,3 +1,4 @@
+import { NextUIProvider } from '@nextui-org/react';
 import '../styles/globals.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -63,12 +64,12 @@ function MyApp({ Component, pageProps }) {
           `,
         }}
       />
-      <Head>
-        <meta name="facebook-domain-verification" content="7xbmada3p6pyxgmf1r73vbegwpj9vh" />
-      </Head>
-      <Layout>
+      <NextUIProvider>
+        <Head>
+          <meta name="facebook-domain-verification" content="7xbmada3p6pyxgmf1r73vbegwpj9vh" />
+        </Head>
         <Component {...pageProps} />
-      </Layout>
+      </NextUIProvider>
     </>
   )
 }

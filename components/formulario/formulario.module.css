@@ -1,0 +1,3 @@
+.formInput input:focus{
+    outline:0 !important;
+}

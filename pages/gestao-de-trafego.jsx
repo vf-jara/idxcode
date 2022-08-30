@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
+import Formulario from "../components/formulario/formulario";
 
 export default function Trafego() {
   return (
@@ -14,7 +16,8 @@ export default function Trafego() {
         <div className="min-h-screen w-full bg-black">
             <div className="flex flex-col py-8 bg-[url('/assets/images/bg-trafego.png')] md:bg-[url('/assets/images/bg-desktop.png')] md:bg-bottom bg-cover">
                 <div className="flex flex-col gap-8 px-5 md:justify-center md:items-center md:mx-auto md:min-h-[50vh] md:w-9/12 md:py-16 md:px-20 md:text-center">
-                    <h1 className="text-white text-3xl font-semibold md:text-5xl md:leading-tight">Apareça para as <font className="text-idx-green font-bold">pessoas certas</font> quando elas buscarem pelo seu produto ou serviço <font className="text-idx-green font-bold">on-line</font>!</h1>
+                    <Image layout="fixed" objectFit="contain" width="150" height="30" src="/assets/images/logoWhite.png" alt="idxcode" />
+                    <h1 className="text-white text-3xl font-semibold md:text-5xl md:leading-tight mt-8">Apareça para as <font className="text-idx-green font-bold">pessoas certas</font> quando elas buscarem pelo seu produto ou serviço <font className="text-idx-green font-bold">on-line</font>!</h1>
 
                     <h2 className="text-white text-base font-normal leading-6 md:text-xl md:w-10/12 md:mt-4">Existe um grande fluxo de pessoas passando pelas maiores <font className="text-idx-green font-bold">avenidas digitais</font> neste exato momento e olhando <font className="font-bold">vitrines</font> e <font className="font-bold">outdoors virtuais</font> de centenas de milhares de empresas.</h2>
                     <h2 className="text-white text-base leading-6 font-semibold md:text-2xl md:w-10/12 md:mt-4">A sua empresa está sendo vista nessas <font className="text-idx-green font-bold">avenidas digitais</font>?</h2>
@@ -94,12 +97,31 @@ export default function Trafego() {
                 </div>
             </div>
             <div className="flex flex-col gap-8 px-5 py-8 md:justify-center md:items-center md:mx-auto md:w-8/12 md:gap-12 md:py-16 md:px-20 md:text-center">
-                <h3 className="text-white text-2xl font-bold md:text-5xl">Quer fazer parte dos <font className="text-idx-green">10%</font> e escalar a sua empresa  <font className="text-idx-green">on-line</font>?</h3>
-                <p className="text-white text-base md:text-2xl"><strong>Clique no <font className="text-idx-green font-bold">botão abaixo</font></strong>, preencha as informações necessárias e retornaremos com uma proposta adequada ao seu momento.</p>
+                <h3 className="text-white text-2xl font-bold md:text-5xl">
+                    Quer fazer parte dos <font className="text-idx-green">10%</font> e escalar a sua empresa  <font className="text-idx-green">on-line</font>?
+                </h3>
+                <p className="text-white text-base md:text-2xl">
+                    <strong>
+                        Preencha o <font className="text-idx-green font-bold">formulário abaixo</font>
+                    </strong> com informações básicas sobre você e sua empresa e retornaremos com uma proposta adequada ao seu momento.
+                </p>
                 <p className="text-white text-base font-bold md:text-2xl">Estamos prontos para fazer a sua empresa crescer!</p>
-                <button className="w-full h-14 px-4 py-3 bg-idx-green text-black hover:border-2 hover:border-idx-green hover:text-idx-green hover:bg-black font-bold text-xl transition-all md:text-2xl md:h-20">Quero vender mais!</button>
+                <Formulario />
             </div>
         </div>
+        <div className="bg-black pt-16 text-center ">
+                <div className="my-8">
+                    <Image
+                        src="/assets/images/logoWhite.png"
+                        alt="Logo idxcode"
+                        width={150}
+                        height={30}
+                    />
+                </div>
+                <div className="mt-10 mx-8 pb-8 text-white text-sm ">
+                    © Copyright 2022 - <strong>Idxcode</strong>
+                </div>
+            </div>
     </>
   )
 }
