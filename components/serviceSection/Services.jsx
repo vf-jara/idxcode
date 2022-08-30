@@ -4,15 +4,15 @@ import icon2 from '/public/assets/images/icon2.png';
 import icon3 from '/public/assets/images/icon3.png';
 import { BsFillCheckCircleFill } from 'react-icons/bs'
 import BotaoOrcamento from '../botaoOrcamento/BotaoOrcamento';
-import { useInView } from 'react-intersection-observer';
+import { useRef } from 'react';
+import { motion } from 'framer-motion'
 
 
 export default function Services() {
-    const { ref, inView, entry } = useInView({
-        root:null,
-        threshold: 0,
-        triggerOnce: true
-    })
+    const services = useRef(null)
+    const cards = useRef(null)
+
+
     return (
         <>
             <div className="lg:py-16 bg-green2" id="services">
@@ -26,43 +26,85 @@ export default function Services() {
                                 Transformamos tecnologia em ativos digitais para a sua empresa crescer com consistência e aproveitar todo o potencial do marketing digital sem se preocupar com uma equipe técnica internamente.
                             </p>
                         </div>
-                        <div ref={ref} className="lg:flex w-full lg:gap-x-3 mb-6 lg:mb-12">
+                        <div ref={services} className="lg:flex w-full lg:gap-x-3 mb-6 lg:mb-12">
                             <div className="lg:flex-col w-full lg:w-6/12">
-                                <div className={`flex mb-5 ${inView? "fadeBlur" : "opacity-0"}`}>
+                                <motion.div
+                                    initial={{ opacity: 0, x: "+100%" }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 1 }}
+                                    viewport={{ once: true }}
+
+                                    className={`flex mb-5`}>
                                     <BsFillCheckCircleFill className="text-[#00ff00] mr-1 text-[25px]" />
                                     <p className="text-lg font-medium">Sites modernos e Mobile First</p>
-                                </div>
-                                <div className={`flex mb-5 ${inView? "fadeBlur delay-1" : "opacity-0"}`}>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0, x: "+100%" }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 1.2 }}
+                                    viewport={{ once: true }}
+
+                                    className={`flex mb-5`}>
                                     <BsFillCheckCircleFill className="text-[#00ff00] mr-1 text-[25px]" />
                                     <p className="text-lg font-medium">Gestão de Tráfego</p>
-                                </div>
+                                </motion.div>
                             </div>
                             <div className="lg:flex-col w-full lg:w-6/12">
-                                <div className={`flex mb-5 ${inView? "fadeBlur delay-2" : "opacity-0"}`}>
+                                <motion.div
+                                    initial={{ opacity: 0, x: "+100%" }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 1.3 }}
+                                    viewport={{ once: true }}
+
+                                    className={`flex mb-5`}>
                                     <BsFillCheckCircleFill className="text-[#00ff00] mr-1 text-[25px]" />
                                     <p className="text-lg font-medium">Integrações entre sistemas</p>
-                                </div>
-                                <div className={`flex mb-5 ${inView? "fadeBlur delay-3" : "opacity-0"}`}>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0, x: "+100%" }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 1.4 }}
+                                    viewport={{ once: true }}
+
+                                    className={`flex mb-5`}>
                                     <BsFillCheckCircleFill className="text-[#00ff00] mr-1 text-[25px] justify-center align-middle my-auto" />
                                     <p className="text-lg font-medium">Chatbots e Automações</p>
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
-                        <div ref={ref} className={`justify-center lg:block ${inView? "slideLeft delay-4" : "opacity-0"}`}>
+                        <div className={`justify-center lg:block`}>
                             <BotaoOrcamento texto="Solicite um orçamento" url="#contact" />
 
                         </div>
                     </div>
-                    <div className="w-full pt-20 lg:pt-0 lg:w-7/12">
-                        <div ref={ref} className={`${inView? "slideRight":"opacity-0"}`}>
+                    <div ref={cards} className="w-full pt-20 lg:pt-0 lg:w-7/12">
+                        <motion.div
+                            initial={{ opacity: 0, x: "+100%" }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1, delay: 0 }}
+                            viewport={{ once: true, margin:"00px" }}
+
+                            className={``}>
                             <ServiceBox icon={icon1} title="Desenvolvimento de Sites" text="Ninguém constrói casa em terreno alugado. Tenha o controle do seu público e das suas informações." />
-                        </div>
-                        <div ref={ref} className={`lg:pl-20 my-8 ${inView? "slideRight delay-1":"opacity-0"}`}>
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, x: "+100%" }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1, delay: 0.3 }}
+                            viewport={{ once: true }}
+
+                            className={`lg:pl-20 my-8 `}>
                             <ServiceBox icon={icon2} title="Gestão de Tráfego" text="Apareça para a pessoa certa, no momento certo, com o anúncio certo e escale as suas vendas." />
-                        </div>
-                        <div ref={ref} className={`lg:pl-40 ${inView? "slideRight delay-2":"opacity-0"}`}>
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, x: "+100%" }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1, delay: 0.6 }}
+                            viewport={{ once: true }}
+
+                            className={`lg:pl-40 `}>
                             <ServiceBox icon={icon3} title="Chatbots para WhatsApp" text="Muito volume de atendimento? Automatize as principais dúvidas e deixe o seu atendimento com o que realmente importa." />
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>
